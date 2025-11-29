@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 
+//here  tag is used to group the particular testcase.
 test('test to-do app @sanity', async ({ page }) => {
   await page.goto('https://todomvc.com/examples/react/dist/');
   await page.getByTestId('text-input').click();
